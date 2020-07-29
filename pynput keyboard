@@ -1,0 +1,25 @@
+from pynput import keyboard
+from pynput.keyboard import Key, Controller
+from pynput.mouse import Button, Controller
+import time 
+
+kb = Controller()
+mouse = Controller()
+
+
+def on_release(key):
+    try:
+        if key.char == "v":
+            count = 0
+            while (count < 9):
+                time.sleep(0.1)
+                mouse.click(Button.left, 2)
+                    
+
+    except:
+        pass
+
+while True:
+    with keyboard.Listener(
+        on_release = on_release) as listener:
+        listener.join()
