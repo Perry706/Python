@@ -1,20 +1,16 @@
 from pynput import keyboard
 from pynput.keyboard import Key, Controller
-from pynput.mouse import Button, Controller
-import time 
 
 kb = Controller()
-mouse = Controller()
-
 
 def on_release(key):
     try:
-        if key.char == "v":
-            count = 0
+        if 
+           count = 0
             while (count < 9):
-                time.sleep(0.1)
-                mouse.click(Button.left, 2)
-                    
+            kb.type(u'大家好！！！')
+            kb.press(Key.enter)
+            kb.release(Key.enter)
 
     except:
         pass
