@@ -5,7 +5,6 @@ kb = Controller()
 
 def on_release(key):
     try:
-        if 
            count = 0
             while (count < 9):
             kb.type(u'大家好！！！')
