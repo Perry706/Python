@@ -5,9 +5,9 @@ kb = Controller()
 
 def on_release(key):
     try:
-           count = 0
-            while (count < 9):
-            kb.type(u'大家好！！！')
+        count = 0
+        while (count < 9):
+            kb.type(u'Hello')
             kb.press(Key.enter)
             kb.release(Key.enter)
 
